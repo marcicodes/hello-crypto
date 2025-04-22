@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'marcicodes'
         slot-name: 'production'
-        publish-profile: ${{ secrets.ACR_PUBLISH_NAME }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BE6F4707B77F4CC2B10AF9AE9AFC181B}}
         images: 'marcicodesregistry.azurecr.io/${{ secrets.ACR_CONTAINER_NAME }}/latest:${{ github.sha }}'
